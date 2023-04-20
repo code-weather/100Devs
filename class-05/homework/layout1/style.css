@@ -9,14 +9,14 @@ footer {
   clear: both;
 }
 
-.section-one > section {
+header + section section {
   border: solid 3px black;
   width: 33.3333%;
   height: 200px;
   float: left;
 }
 
-.section-two > section {
+section + section section {
   border: solid 3px black;
   width: 50%;
   height: 280px;
