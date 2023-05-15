@@ -27,37 +27,45 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-nav,
-main,
-aside {
-  float: left;
-  width: 10%;
+section, header, footer {
+  border: 1px solid red;
+  width: 100%;
+  height: 450px;
 }
 
-main {
+nav ul li {
+  float: left;
+  border: 1px solid black;
+  height: 40px;
+  width: 25%;
+  list-style: none;
+}
+
+.second-section, main {
+  float: left;
+  text-align: center;
+  padding: 5% 35%;
+}
+
+section + section > section {
+  float: left;
+  height: 450px;
   width: 50%;
+  text-align: center;
+  padding: 140px;
 }
 
-aside {
-  width: 40%;
-}
-
-.bottom-section > h4 + * {
-  float: left;
-  border: 1px solid black;
-}
-
-aside + section section {
-  float: left;
-  border: 1px solid black;
-  height: 200px;
-  width: 33.3333%;
-}
-
-section h2,
-section span {
+.fourth-section {
   float: left;
   width: 100%;
+  height: 450px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.fourth-section > p {
+  margin: 0 35%;
+  margin-bottom: 2%;
 }
 
 /******************************************
