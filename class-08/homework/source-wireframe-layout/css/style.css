@@ -64,7 +64,7 @@ nav > ul > li:last-child {
   padding-left: 80px;
 }
 
-.second-section > section > img {
+.img-2 {
   width: 75%;
   height: 320px;
 }
@@ -83,7 +83,13 @@ section + section > section {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-@media (max-width: 390px) {
+@media (min-width: 390px) {
+  .img-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 389px) {
   header > nav > h2 {
     text-align: center;
     padding: 10px;
@@ -103,7 +109,26 @@ section + section > section {
     margin: 0 auto;
   }
 
-  section + section > img {
+  .img-2 {
     display: none;
+  }
+
+  .second-section > section {
+    float: none;
+    width: 100%;
+  }
+
+  .img-1 {
+    float: left;
+    clear: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .third-section {
+    float: none;
+    clear: both;
+    margin-top: 20px;
   }
 }
