@@ -1,0 +1,80 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  padding: 5px 20px 5px 20px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav,
+nav ul,
+ul li {
+  display: flex;
+}
+
+ul,
+ul > .bookOnline {
+  margin-left: 200px;
+}
+
+header nav ul li {
+  align-items: center;
+  align-content: center;
+  width: 100px;
+}
+
+/* ---------- main --------------- */
+.firstRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRow > h1 {
+  width: 170px;
+}
+
+.secondRow {
+  width: 50%;
+}
+
+.secondRow section:first-child {
+  border: 1px solid black;
+  width: 200px;
+  text-align: center;
+}
+
+.secondRow section + section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 0 20px;
+}
+
+.secondRow section + section > a {
+  margin: 10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
