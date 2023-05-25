@@ -5,16 +5,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -22,21 +22,101 @@
 /*******************************************/
 
 body {
-
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header ul {
+  float: left;
+  width: 100%;
 }
 
-footer {
-
+ul li {
+  float: right;
+  margin-right: 30px;
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+main > section {
+  width: 50%;
+  float: left;
+  height: 200px;
+  text-align: center;
+}
+
+main > ul li {
+  float: left;
+  margin: 20px 20px;
+  list-style: none;
+}
+
+.specilityCuisine {
+  border: 1px solid black;
+  width: 100%;
+  height: 400px;
+}
+
+.specilityCuisine > span,
+.specilityCuisine > h1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.specilityCuisine > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuImg > section {
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.menuImg > section > ul li {
+  float: left;
+  width: 20%;
+}
+
+.openHours > span,
+.openHours > h1,
+.openHours > img,
+.openHours > h2,
+.openHours > img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.schedule {
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+.schedule > .weekday,
+.schedule > .weekend {
+  float: left;
+  width: 50%;
+  height: 100px;
+  padding-left: 200px;
+}
+
+.customerReview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
